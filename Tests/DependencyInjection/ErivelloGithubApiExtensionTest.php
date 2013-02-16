@@ -64,6 +64,6 @@ class ErivelloGithubApiExtensionTest extends \PHPUnit_Framework_TestCase
         $builder = $this->getBuilder($config);
         
         $this->assertFalse($builder->getParameter('github_api.cache_dir'));
-        $this->assertEquals('/tmp/github-api-cache-test', $builder->hasParameter('github_api.cache_file'));
+        $this->assertEquals('/tmp/github-api-cache-test', $builder->getParameter('github_api.cache_file'));
     }   
 }
